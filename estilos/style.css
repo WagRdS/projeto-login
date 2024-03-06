@@ -1,8 +1,54 @@
 @charset "UTF-8";
 
-/*
-Palheta de Cores
-verde: #49a09d
-Lilás: #5f2c82
-*/
+:root{
+    --verde: #49a09d;
+    --lilaz: #5f2c82;
+    --branco: #ffffff;
+    --sombra: #000000cc
+}
 
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: var(--lilaz);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+section#login{
+    background-color: var(--branco);
+    width: 250px;
+    height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 20px;
+    position: absolute;
+    box-shadow: 0px 0px 20px var(--sombra);
+}
+
+section#login > div#imagem{
+    display: block;
+    background: var(--lilaz) url('../imagens/pexels-soloman-soh-1492232.jpg') no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: right bottom;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+
+}
+    
